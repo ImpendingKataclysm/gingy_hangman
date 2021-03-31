@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hangman</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.min.css">
+    </head>
+    <body>
+        <div id="main_wrap">
+            <header>
+                <h1>COMP2132 Final Project: Hangman</h1>
+            </header>
+            <main>
+                <div id="game-over" class="endgame-box">
+                    <p>Game Over!</p>
+                    <figure>
+                        <img src="images/game_over.jpg" alt="Gingy on a cookie sheet">                       
+                    </figure>
+                    <button id="replay" class="btn">Play Again</button>
+                </div>
+                <div id="win-game" class="endgame-box">
+                    <p>You win!</p>
+                    <figure>
+                        <img src="images/gingy_victorious.png" alt="Happy Gingy with lollypop">
+                    </figure>
+                    <p><button id="new-game" class="btn">New Game</button></p>
+                </div>
+                <div id="game-screen">
+                    <img id="game-img" src="images/gingy00.png" alt="Gingy from Shrek">
+                </div>
+                <div id="inputs">
+                    <p id="intro">Try to guess the word! Press Start to begin.</p>
+                    <div id="letters"></div>
+                    <p id="output"></p>
+                    <p id="result"></p>
+                    <button id="start-btn" class="btn">Start</button>
+                    <div id="keyboard"></div>
+                </div>
+                </main>
+            <footer>
+                <address>
+                    Katie Janzen <br>
+                    A01260262 <br>
+                    COMP 2132
+                </address>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+@use "variables";
+
+// Game screens
+#game-screen {
+    max-width: 60%; 
+    background-color: $accent2;
+    display: flex;
+    justify-content: center;
+    box-shadow: $shadow;
+
+    @include box-props(0, 0.5rem auto, 1px, solid, $text_color, 10px);
+}
+
+.endgame-box {
+    width: 50%; 
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    display: none;
+    background-color: $end_box_bg;
+    box-shadow: $shadow;
+
+    @include box-props(1.5rem, 0, 1px, solid, $text_color, 10px);
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    button {       
+        display: block;
+        color: $text_color;
+        background-color: $accent2;
+        box-shadow: none;
+
+        @include box-props(0.5rem, auto, 1px, solid, $text_color, 5px);
+    }
+}
+
+#game-over img {
+    @include box-props(0, auto, 1px, solid, $text_color, 10px);
+}

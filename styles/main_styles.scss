@@ -1,0 +1,66 @@
+// Variables
+@use "variables";
+
+// Main styles
+
+html {
+    box-sizing: border-box;
+    font: 1.1rem calibri, arial, sans-serif;
+    color: $text_color;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $main_bg_color;
+}
+
+header, footer {
+    background-color: $hf_bg_color;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: candara, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p, address {
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: $accent2;
+    color: $text_color;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px $hf_bg_color;
+    box-shadow: $shadow;
+
+    @include box-props(0.5rem, 0.5rem, 1px, solid, $text_color, 7px);
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+address {
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+#main_wrap {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
