@@ -1,3 +1,3 @@
 # Gingy Hangman
  ## JavaScript Hangman Game
-Hangman Game in HTML and JavaScript styled with CSS/Sass.
+Hangman Game in HTML and JavaScript/jQuery styled with CSS/Sass.
