@@ -1,2 +1,2 @@
-# comp2132_final_project
- Hangman game - final project for COMP2132
+# Gingy Hangman
+ ## JavaScript Hangman Game
