@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -52,6 +52,7 @@ table {
   border-spacing: 0;
 }
 
+@use "variables";
 html {
   box-sizing: border-box;
   font: 1.1rem calibri, arial, sans-serif;
@@ -67,7 +68,7 @@ body {
 }
 
 header, footer {
-  background-color: white;
+  background-color: rgba(92, 69, 45, 0.9);
   padding: 1rem;
 }
 
@@ -87,8 +88,8 @@ p, address {
   background-color: rgba(140, 176, 78, 0.9);
   color: #e1dfb6;
   font-weight: bold;
-  text-shadow: 0px 0px 5px white;
-  box-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
+  box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
   padding: 0.5rem;
   margin: 0.5rem;
   border-width: 1px;
@@ -118,10 +119,11 @@ address {
   min-height: 100vh;
 }
 
+@use 'variables';
 #inputs {
   background-color: rgba(59, 38, 15, 0.9);
   max-width: 70%;
-  box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
   padding: 0.5rem;
   margin: 0.5rem auto;
   border-width: 1px;
@@ -129,17 +131,21 @@ address {
   border-color: #e1dfb6;
   border-radius: 15px;
 }
+
 #inputs p#intro {
   margin-bottom: 1rem;
 }
+
 #inputs p#output {
   margin: 1rem 0;
 }
+
 #inputs #letters {
   display: flex;
   justify-content: center;
   max-width: 90%;
 }
+
 #inputs #letters .letter-space {
   background-color: #e1dfb6;
   color: black;
@@ -150,6 +156,7 @@ address {
   margin: 0.2rem;
   line-height: 1;
 }
+
 #inputs #keyboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -157,19 +164,21 @@ address {
   padding: 0.5rem;
   max-width: 100%;
 }
+
 #inputs #keyboard button {
   color: #e1dfb6;
   background-color: rgba(140, 176, 78, 0.9);
   font-weight: bold;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
 }
 
+@use "variables";
 #game-screen {
   max-width: 60%;
   background-color: rgba(140, 176, 78, 0.9);
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
   padding: 0;
   margin: 0.5rem auto;
   border-width: 1px;
@@ -185,7 +194,7 @@ address {
   left: 25vw;
   display: none;
   background-color: rgba(59, 78, 15, 0.9);
-  box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
   padding: 1.5rem;
   margin: 0;
   border-width: 1px;
@@ -193,10 +202,12 @@ address {
   border-color: #e1dfb6;
   border-radius: 10px;
 }
+
 .endgame-box p {
   text-align: center;
   font-size: 1.5rem;
 }
+
 .endgame-box button {
   display: block;
   color: #e1dfb6;
@@ -217,4 +228,6 @@ address {
   border-style: solid;
   border-color: #e1dfb6;
   border-radius: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

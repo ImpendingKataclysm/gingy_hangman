@@ -1,7 +1,7 @@
 #inputs {
   background-color: rgba(59, 38, 15, 0.9);
   max-width: 70%;
-  box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
+  box-shadow: 0px 0px 5px white;
   padding: 0.5rem;
   margin: 0.5rem auto;
   border-width: 1px;
@@ -9,21 +9,17 @@
   border-color: #e1dfb6;
   border-radius: 15px;
 }
-
 #inputs p#intro {
   margin-bottom: 1rem;
 }
-
 #inputs p#output {
   margin: 1rem 0;
 }
-
 #inputs #letters {
   display: flex;
   justify-content: center;
   max-width: 90%;
 }
-
 #inputs #letters .letter-space {
   background-color: #e1dfb6;
   color: black;
@@ -34,18 +30,16 @@
   margin: 0.2rem;
   line-height: 1;
 }
-
 #inputs #keyboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5rem;
   padding: 0.5rem;
+  max-width: 100%;
 }
-
 #inputs #keyboard button {
   color: #e1dfb6;
   background-color: rgba(140, 176, 78, 0.9);
-  padding: 0.5rem;
   font-weight: bold;
-  text-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
-}
+  text-shadow: 0px 0px 5px white;
+}/*# sourceMappingURL=input_styles.css.map */

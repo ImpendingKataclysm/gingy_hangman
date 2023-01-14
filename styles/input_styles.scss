@@ -4,11 +4,11 @@
 // Input styles
 
 #inputs {
-    background-color: $keyboard_bg;
+    background-color: variables.$keyboard_bg;
     max-width: 70%;
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
 
-    @include box-props(0.5rem, 0.5rem auto, 1px, solid, $text_color, 15px);
+    @include variables.box-props(0.5rem, 0.5rem auto, 1px, solid, variables.$text_color, 15px);
     
     p#intro {
         margin-bottom: 1rem;
@@ -24,7 +24,7 @@
         max-width: 90%;
         
         .letter-space {
-            background-color: $text_color;
+            background-color: variables.$text_color;
             color: black;
             font-size: 1.7rem;
             text-align: center;
@@ -43,10 +43,10 @@
         max-width: 100%;
 
         button {
-            color: $text_color;
-            background-color: $accent2;
+            color: variables.$text_color;
+            background-color: variables.$accent2;
             font-weight: bold;
-            text-shadow: $shadow;
+            text-shadow: variables.$shadow;
         }
     }
 }
