@@ -5,14 +5,14 @@
 
 #inputs {
     background-color: variables.$keyboard_bg;
-    max-width: 70%;
+    max-width: 80%;
     box-shadow: variables.$shadow;
 
     @include variables.box-props(0.5rem, 0.5rem auto, 1px, solid, variables.$text_color, 15px);
     
-    p#intro {
+    /*p#intro {
         margin-bottom: 1rem;
-    }
+    }*/
 
     p#output {
         margin: 1rem 0;
@@ -39,14 +39,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 0.5rem;
-        padding: 0.5rem;
-        max-width: 100%;
+        padding: 0.8rem;
+        max-width: 70%;
+        justify-items: center;
 
         button {
             color: variables.$text_color;
             background-color: variables.$accent2;
             font-weight: bold;
             text-shadow: variables.$shadow;
+            padding: 0.8rem;
+            width: 100%;
         }
     }
 }

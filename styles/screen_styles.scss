@@ -3,12 +3,12 @@
 // Game screens
 #game-screen {
     max-width: 60%; 
-    background-color: $accent2;
+    background-color: variables.$accent2;
     display: flex;
     justify-content: center;
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
 
-    @include box-props(0, 0.5rem auto, 1px, solid, $text_color, 10px);
+    @include variables.box-props(0, 0.5rem auto, 1px, solid, variables.$text_color, 10px);
 }
 
 .endgame-box {
@@ -17,10 +17,10 @@
     top: 20vh;
     left: 25vw;
     display: none;
-    background-color: $end_box_bg;
-    box-shadow: $shadow;
+    background-color: variables.$end_box_bg;
+    box-shadow: variables.$shadow;
 
-    @include box-props(1.5rem, 0, 1px, solid, $text_color, 10px);
+    @include variables.box-props(1.5rem, 0, 1px, solid, variables.$text_color, 10px);
 
     p {
         text-align: center;
