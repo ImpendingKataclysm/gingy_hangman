@@ -18,6 +18,11 @@ header {
   text-align: center;
 }
 
+main {
+  display: grid;
+  /*grid-template-rows: 1fr 1fr;*/
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: candara, Arial, Helvetica, sans-serif;
 }
@@ -61,8 +66,7 @@ img {
 
 #main_wrap {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 @media screen and (min-width: 380px) {
@@ -83,5 +87,13 @@ img {
   }
   p {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  h1 {
+    font-size: 4rem;
+  }
+  #main-wrap {
+    grid-template-rows: 1fr auto;
   }
 }/*# sourceMappingURL=main_styles.css.map */

@@ -72,6 +72,11 @@ header {
   text-align: center;
 }
 
+main {
+  display: grid;
+  /*grid-template-rows: 1fr 1fr;*/
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: candara, Arial, Helvetica, sans-serif;
 }
@@ -115,8 +120,7 @@ img {
 
 #main_wrap {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 @media screen and (min-width: 380px) {
@@ -137,6 +141,14 @@ img {
   }
   p {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  h1 {
+    font-size: 4rem;
+  }
+  #main-wrap {
+    grid-template-rows: 1fr auto;
   }
 }
 #inputs {
@@ -196,6 +208,10 @@ img {
     font-size: 1.5rem;
   }
 }
+#game-wrapper {
+  display: grid;
+}
+
 #game-screen {
   max-width: 90%;
   background-color: rgba(140, 176, 78, 0.9);
@@ -249,4 +265,19 @@ img {
   border-style: solid;
   border-color: #e1dfb6;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 1020px) {
+  #game-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #game-screen {
+    grid-column: 2/span 3;
+    width: 100%;
+  }
+  #inputs {
+    grid-column: 1/span 5;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
