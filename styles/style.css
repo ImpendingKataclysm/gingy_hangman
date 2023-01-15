@@ -129,9 +129,6 @@ address {
   border-style: solid;
   border-color: #e1dfb6;
   border-radius: 15px;
-  /*p#intro {
-      margin-bottom: 1rem;
-  }*/
 }
 #inputs p#output {
   margin: 1rem 0;
@@ -169,6 +166,11 @@ address {
   width: 100%;
 }
 
+@media screen and (max-width: 310px) {
+  #inputs #keyboard button {
+    padding: 0.5rem;
+  }
+}
 #game-screen {
   max-width: 60%;
   background-color: rgba(140, 176, 78, 0.9);
