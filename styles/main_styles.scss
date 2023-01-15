@@ -35,14 +35,19 @@ p, address {
     line-height: 1.5;
 }
 
+.btn-container {
+    display: grid;
+    justify-items: center;
+}
+
 .btn {
-    background-color: variables.$accent2;
+    background-color: variables.$btn_color;
     color: variables.$text_color;
     font-weight: bold;
     text-shadow: 0px 0px 5px variables.$hf_bg_color;
     box-shadow: variables.$shadow;
 
-    @include variables.box-props(0.5rem, 0.3rem, 1px, solid, variables.$text_color, 7px);
+    @include variables.box-props(0.5rem, auto, 1px, solid, variables.$text_color, 7px);
 }
 
 figure {
@@ -64,5 +69,10 @@ img {
 @media screen and (min-width:380px) {
     p {
         font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+        padding: 1.5rem;
     }
 }
