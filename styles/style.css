@@ -108,17 +108,17 @@ img {
   width: 100%;
 }
 
-address {
-  font-style: italic;
-  font-size: 0.7rem;
-}
-
 #main_wrap {
   display: grid;
   grid-template-rows: auto 1fr auto;
   max-height: 100vh;
 }
 
+@media screen and (min-width: 380px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
 #inputs {
   background-color: rgba(59, 38, 15, 0.9);
   max-width: 90%;
