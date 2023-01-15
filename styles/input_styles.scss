@@ -5,7 +5,7 @@
 
 #inputs {
     background-color: variables.$keyboard_bg;
-    max-width: 80%;
+    max-width: 90%;
     box-shadow: variables.$shadow;
 
     @include variables.box-props(0.5rem, 0.5rem auto, 1px, solid, variables.$text_color, 15px);
@@ -40,7 +40,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 0.5rem;
         padding: 0.8rem;
-        max-width: 70%;
+        max-width: 90%;
+        margin: auto;
         justify-items: center;
 
         button {
