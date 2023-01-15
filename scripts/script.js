@@ -9,7 +9,7 @@ class Word {
 
 // Hint/Word Arrays
 const words = [`Duloc`, `Lithgow`, `Shrek`, `Fiona`, `Dragon`, `Murphy`,
-`Green swamp dweller`];
+`Ogre`];
 const hints = [
     `Fairy tale kingdom`,
     `Tiny tyrant portrayer`,
@@ -17,7 +17,7 @@ const hints = [
     `Princess with inner beauty`,
     `Fire-breathing ally`,
     `Actor who made an ass of himself`,
-    `Ogre`
+    `Green swamp dweller`
 ];
 
 // Keyboard Array
