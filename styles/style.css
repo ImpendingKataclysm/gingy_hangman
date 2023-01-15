@@ -180,6 +180,11 @@ img {
     padding: 0.5rem;
   }
 }
+@media screen and (min-width: 380px) {
+  #inputs #keyboard button {
+    font-size: 1.5rem;
+  }
+}
 #game-screen {
   max-width: 60%;
   background-color: rgba(140, 176, 78, 0.9);

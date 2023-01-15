@@ -56,3 +56,9 @@
         padding: 0.5rem;
     }
 }
+
+@media screen and(min-width: 380px) {
+    #inputs #keyboard button {
+        font-size: 1.5rem;
+    }
+}
