@@ -64,11 +64,19 @@
 }
 
 @media screen and (min-width: 1900px) {
-    #inputs #keyboard button {
-        font-size: 5rem;
-    }
+    #inputs {
+        #keyboard button, #letters .letter-space {
+            font-size: 5rem;
+        }
 
-    p#intro {
-        margin-left: 5rem;
+        p, p#output {
+            margin-left: 7rem;
+        }
+
+        #letters .letter-space {
+            width: 7rem;
+            height: 5.5rem;
+            margin: 1rem;
+        }
     }
 }

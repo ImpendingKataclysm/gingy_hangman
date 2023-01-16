@@ -22,7 +22,7 @@
   top: 20vh;
   left: 25vw;
   display: none;
-  background-color: rgba(59, 78, 15, 0.9);
+  background-color: rgb(28, 109, 3);
   box-shadow: 0px 0px 5px rgba(92, 69, 45, 0.9);
   padding: 1.5rem;
   margin: 0;
@@ -34,18 +34,6 @@
 .endgame-box p {
   text-align: center;
   font-size: 1.5rem;
-}
-.endgame-box button {
-  display: block;
-  color: #e1dfb6;
-  background-color: rgba(140, 176, 78, 0.9);
-  box-shadow: none;
-  padding: 0.5rem;
-  margin: auto;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1dfb6;
-  border-radius: 5px;
 }
 
 #game-over img {
@@ -74,14 +62,20 @@
 @media screen and (min-width: 1900px) {
   #game-wrapper {
     grid-template-columns: 100%;
+    width: 60%;
+    margin: auto;
   }
   #game-screen {
     grid-column: 1/span 1;
-  }
-  #game-screen img {
-    width: 40%;
+    width: 60%;
   }
   #inputs {
     grid-column: 1/span 1;
+  }
+  .endgame-box figure img {
+    width: 30%;
+  }
+  .endgame-box p {
+    font-size: 5rem;
   }
 }/*# sourceMappingURL=screen_styles.css.map */

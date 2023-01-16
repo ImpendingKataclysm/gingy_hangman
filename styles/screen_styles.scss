@@ -30,15 +30,6 @@
         text-align: center;
         font-size: 1.5rem;
     }
-
-    button {       
-        display: block;
-        color: variables.$text_color;
-        background-color: variables.$accent2;
-        box-shadow: none;
-
-        @include variables.box-props(0.5rem, auto, 1px, solid, variables.$text_color, 5px);
-    }
 }
 
 #game-over img {
@@ -65,17 +56,26 @@
 @media screen and (min-width: 1900px) {
     #game-wrapper {
         grid-template-columns: 100%;
+        width: 60%;
+        margin: auto;
     } 
 
     #game-screen {
         grid-column: 1 / span 1;
-    }
-
-    #game-screen img {
-        width: 40%;
+        width: 60%;
     }
 
     #inputs {
         grid-column: 1 / span 1;
+    }
+
+    .endgame-box {
+        figure img {
+            width: 30%;
+        }
+
+        p {
+            font-size: 5rem;
+        }
     }
 }

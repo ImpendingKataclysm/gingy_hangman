@@ -56,10 +56,15 @@
   }
 }
 @media screen and (min-width: 1900px) {
-  #inputs #keyboard button {
+  #inputs #keyboard button, #inputs #letters .letter-space {
     font-size: 5rem;
   }
-  p#intro {
-    margin-left: 5rem;
+  #inputs p, #inputs p#output {
+    margin-left: 7rem;
+  }
+  #inputs #letters .letter-space {
+    width: 7rem;
+    height: 5.5rem;
+    margin: 1rem;
   }
 }/*# sourceMappingURL=input_styles.css.map */
