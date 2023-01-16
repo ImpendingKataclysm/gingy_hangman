@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["style.scss"],"sourcesContent":["@import \"reset.scss\";\r\n@import \"variables.scss\";\r\n@import \"main_styles.scss\";\r\n@import \"input_styles.scss\";\r\n@import \"screen_styles.scss\";"],"file":"style.css"}

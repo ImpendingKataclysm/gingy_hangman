@@ -1,14 +1,18 @@
 @use "variables";
 
 // Game screens
+#game-wrapper {
+    display: grid;
+}
+
 #game-screen {
-    max-width: 60%; 
-    background-color: $accent2;
+    max-width: 90%; 
+    background-color: variables.$accent2;
     display: flex;
     justify-content: center;
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
 
-    @include box-props(0, 0.5rem auto, 1px, solid, $text_color, 10px);
+    @include variables.box-props(0, 0.5rem auto, 1px, solid, variables.$text_color, 10px);
 }
 
 .endgame-box {
@@ -17,26 +21,61 @@
     top: 20vh;
     left: 25vw;
     display: none;
-    background-color: $end_box_bg;
-    box-shadow: $shadow;
+    background-color: variables.$end_box_bg;
+    box-shadow: variables.$shadow;
 
-    @include box-props(1.5rem, 0, 1px, solid, $text_color, 10px);
+    @include variables.box-props(1.5rem, 0, 1px, solid, variables.$text_color, 10px);
 
     p {
         text-align: center;
         font-size: 1.5rem;
     }
-
-    button {       
-        display: block;
-        color: $text_color;
-        background-color: $accent2;
-        box-shadow: none;
-
-        @include box-props(0.5rem, auto, 1px, solid, $text_color, 5px);
-    }
 }
 
 #game-over img {
-    @include box-props(0, auto, 1px, solid, $text_color, 10px);
+    @include variables.box-props(0, auto, 1px, solid, variables.$text_color, 10px);
+}
+
+@media screen and (min-width: 1020px){
+    #game-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #game-screen {
+        grid-column: 2 / span 3;
+        width: 100%;
+    }
+
+    #inputs {
+        grid-column: 1 / span 5;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #game-wrapper {
+        grid-template-columns: 100%;
+        width: 60%;
+        margin: auto;
+    } 
+
+    #game-screen {
+        grid-column: 1 / span 1;
+        width: 60%;
+    }
+
+    #inputs {
+        grid-column: 1 / span 1;
+    }
+
+    .endgame-box {
+        figure img {
+            width: 30%;
+        }
+
+        p {
+            font-size: 5rem;
+        }
+    }
 }

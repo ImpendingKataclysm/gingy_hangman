@@ -4,16 +4,12 @@
 // Input styles
 
 #inputs {
-    background-color: $keyboard_bg;
-    max-width: 70%;
-    box-shadow: $shadow;
+    background-color: variables.$keyboard_bg;
+    max-width: 90%;
+    box-shadow: variables.$shadow;
 
-    @include box-props(0.5rem, 0.5rem auto, 1px, solid, $text_color, 15px);
+    @include variables.box-props(0.5rem, 0.5rem auto, 1px, solid, variables.$text_color, 15px);
     
-    p#intro {
-        margin-bottom: 1rem;
-    }
-
     p#output {
         margin: 1rem 0;
     }
@@ -24,7 +20,7 @@
         max-width: 90%;
         
         .letter-space {
-            background-color: $text_color;
+            background-color: variables.$text_color;
             color: black;
             font-size: 1.7rem;
             text-align: center;
@@ -39,14 +35,48 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 0.5rem;
-        padding: 0.5rem;
-        max-width: 100%;
+        padding: 0.8rem;
+        max-width: 90%;
+        margin: auto;
+        justify-items: center;
 
         button {
-            color: $text_color;
-            background-color: $accent2;
+            color: variables.$text_color;
+            background-color: variables.$accent2;
             font-weight: bold;
-            text-shadow: $shadow;
+            text-shadow: variables.$shadow;
+            padding: 0.8rem;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width: 310px) {
+    #inputs #keyboard button {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and(min-width: 380px) {
+    #inputs #keyboard button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #inputs {
+        #keyboard button, #letters .letter-space {
+            font-size: 5rem;
+        }
+
+        p, p#output {
+            margin-left: 7rem;
+        }
+
+        #letters .letter-space {
+            width: 7rem;
+            height: 5.5rem;
+            margin: 1rem;
         }
     }
 }
