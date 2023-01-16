@@ -74,7 +74,6 @@ header {
 
 main {
   display: grid;
-  /*grid-template-rows: 1fr 1fr;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +84,7 @@ h1 {
   font-size: 2rem;
 }
 
-p, address {
+p {
   line-height: 1.5;
 }
 
@@ -151,6 +150,24 @@ img {
     grid-template-rows: 1fr auto;
   }
 }
+@media screen and (min-width: 1900px) {
+  h1 {
+    font-size: 10rem;
+    padding: 2rem;
+  }
+  p {
+    font-size: 5rem;
+    padding: 3rem 0 0 3rem;
+  }
+  p #intro {
+    margin-left: 5rem;
+  }
+  .btn {
+    font-size: 5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+}
 #inputs {
   background-color: rgba(59, 38, 15, 0.9);
   max-width: 90%;
@@ -206,6 +223,14 @@ img {
 @media screen and (min-width: 380px) {
   #inputs #keyboard button {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  #inputs #keyboard button {
+    font-size: 5rem;
+  }
+  p#intro {
+    margin-left: 5rem;
   }
 }
 #game-wrapper {
@@ -279,5 +304,19 @@ img {
   #inputs {
     grid-column: 1/span 5;
     width: 100%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  #game-wrapper {
+    grid-template-columns: 100%;
+  }
+  #game-screen {
+    grid-column: 1/span 1;
+  }
+  #game-screen img {
+    width: 40%;
+  }
+  #inputs {
+    grid-column: 1/span 1;
   }
 }/*# sourceMappingURL=style.css.map */

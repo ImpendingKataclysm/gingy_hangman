@@ -25,7 +25,6 @@ header {
 
 main {
     display: grid;
-    /*grid-template-rows: 1fr 1fr;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +35,7 @@ h1 {
     font-size: 2rem;
 }
 
-p, address {
+p {
     line-height: 1.5;
 }
 
@@ -103,5 +102,27 @@ img {
 
     #main-wrap {
         grid-template-rows: 1fr auto ;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    h1 {
+        font-size: 10rem;
+        padding: 2rem;
+    }
+
+    p {
+        font-size: 5rem;
+        padding: 3rem 0 0 3rem;
+    }
+
+    p #intro {
+        margin-left: 5rem;
+    }
+
+    .btn {
+        font-size: 5rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
     }
 }

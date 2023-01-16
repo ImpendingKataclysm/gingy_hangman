@@ -54,4 +54,12 @@
   #inputs #keyboard button {
     font-size: 1.5rem;
   }
+}
+@media screen and (min-width: 1900px) {
+  #inputs #keyboard button {
+    font-size: 5rem;
+  }
+  p#intro {
+    margin-left: 5rem;
+  }
 }/*# sourceMappingURL=input_styles.css.map */

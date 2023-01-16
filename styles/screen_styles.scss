@@ -61,3 +61,21 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 1900px) {
+    #game-wrapper {
+        grid-template-columns: 100%;
+    } 
+
+    #game-screen {
+        grid-column: 1 / span 1;
+    }
+
+    #game-screen img {
+        width: 40%;
+    }
+
+    #inputs {
+        grid-column: 1 / span 1;
+    }
+}
